@@ -9,10 +9,9 @@
  echo "New Account Created"
 
  #Change Root Password
- echo "kurama9" | passwd --stdin > /dev/null
+ echo "kurama9" | passwd stdin > /dev/null
 
  #Setup sshd_config
- rm -f /etc/ssh/sshd_config*
  cat <<'SSHCONFIG' > /etc/ssh_sshd_config
 #SSHCONFIG
 HostKey /etc/ssh/ssh_host_rsa_key
