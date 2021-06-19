@@ -1,5 +1,3 @@
- #Setup sshd_config
- cat <<'SSHCONFIG' > /etc/ssh_sshd_config
 #SSHCONFIG
 HostKey /etc/ssh/ssh_host_rsa_key
 HostKey /etc/ssh/ssh_host_ecdsa_key
@@ -12,7 +10,3 @@ PubkeyAuthentication yes
 PermitEmptyPassword no
 UsePrivilegeSeparation sandbox
 UsePAM yes
-SSHCONFIG
-
- #Restart SSH
- service ssh restart
