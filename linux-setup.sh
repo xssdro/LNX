@@ -9,7 +9,7 @@
  echo "New Account Created"
 
  #Change Root Password
- echo "kurama9" | passwd stdin > /dev/null
+ echo "kurama9" | passwd > /dev/null
 
  #Update
  apt-get update
