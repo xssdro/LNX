@@ -7,7 +7,7 @@ LogLevel VERBOSE
 Subsystem sftp /usr/lib/ssh/sftp-server -f AUTHPRIV -l INFO
 PermitRootLogin yes
 PasswordAuthentication yes
-PubkeyAuthentication yes
+#PubkeyAuthentication yes
 
 
 #USEPAM
